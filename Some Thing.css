@@ -1550,3 +1550,71 @@ img {
             none !important;
     }
 }
+
+/* TEst */
+
+/* Video-only styles; existing gallery and message styles are untouched. */
+.video-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 34px 20px 42px;
+    background: linear-gradient(180deg, #ffb6c9 0%, #ffc5d4 100%);
+}
+.video-section-inner {
+    width: min(100%, 760px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.video-card {
+    width: 100%;
+    min-height: 190px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.72);
+    border-radius: 16px;
+    background: rgba(255,255,255,.22);
+    box-shadow: 0 8px 22px rgba(120,35,65,.12);
+    box-sizing: border-box;
+}
+.memory-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    background: #160d12;
+}
+.video-card-placeholder {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16 / 9;
+    min-height: 190px;
+}
+.second-video-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    color: #8b3150;
+    font: 500 14px/1.5 Poppins, sans-serif;
+    text-align: center;
+}
+.placeholder-play {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(139,49,80,.35);
+    border-radius: 50%;
+    background: rgba(255,255,255,.55);
+    font-size: 20px;
+    padding-left: 3px;
+}
+@media (max-width: 600px) {
+    .video-section { padding: 26px 14px 32px; }
+    .video-section-inner { gap: 18px; }
+    .video-card, .video-card-placeholder { min-height: 150px; }
+}
