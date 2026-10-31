@@ -14,10 +14,11 @@
     >
 
     <meta name="theme-color" content="#ff758f">
-
+`
     <title>Happy Birthday! ❤️</title>
 
-    <link rel="stylesheet" href="./Some Thing.css">
+    <link rel="stylesheet" href="Some Thing.css">
+    <!-- <link rel="stylesheet" href="./video-sections.css"> -->
 
     <link
         rel="preconnect"
@@ -330,6 +331,26 @@
     <!-- =========================
          MESSAGE SECTION
     ========================== -->
+    <!-- VIDEO SECTION: inserted between gallery and special message -->
+    <section class="video-section" id="video-memories" aria-label="Video memories">
+        <div class="video-section-inner">
+            <div class="video-card">
+                <video class="memory-video" controls playsinline preload="metadata">
+                    <source src="./Assits/A,5%25.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+
+            <div class="video-card video-card-placeholder" aria-label="Reserved space for the second video">
+                <div class="second-video-placeholder">
+                    <span class="placeholder-play" aria-hidden="true">▶</span>
+                    <span>Second video will be added here</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section
         class="message-section"
         id="message"
@@ -408,7 +429,7 @@
     </footer>
 
 
-    <script src="./Some Things.js"></script>
+    <script src="./Some Thing.js"></script>
 
 </body>
 </html>
