@@ -233,14 +233,14 @@ function animateMessageText() {
 
 function animatePhoto(card) {
 
-    const image =
-        card.querySelector("img");
+    const media =
+        card.querySelector("img, video");
 
-    if (!image) {
+    if (!media) {
         return;
     }
 
-    image.style.animation =
+    media.style.animation =
         "photoEnter 0.8s ease-out forwards";
 }
 
