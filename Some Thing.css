@@ -1618,3 +1618,26 @@ img {
     .video-section-inner { gap: 18px; }
     .video-card, .video-card-placeholder { min-height: 150px; }
 }
+
+
+/* =========================================================
+   SIXTH GALLERY MEMORY VIDEO
+   Keeps the existing gallery card dimensions and styling.
+========================================================= */
+
+.video-photo-container {
+    background: #160d12;
+}
+
+.gallery-memory-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #160d12;
+    border-radius: inherit;
+}
+
+.gallery-memory-video::-webkit-media-controls {
+    opacity: 1;
+}
