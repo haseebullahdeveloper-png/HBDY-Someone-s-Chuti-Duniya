@@ -669,6 +669,7 @@ img {
 
 .photo-overlay {
     position: absolute;
+    pointer-events: none;
     inset: 0;
 
     display: flex;
@@ -723,6 +724,7 @@ img {
 ========================================================= */
 
 .like-btn {
+    pointer-events: auto;
     align-self: flex-end;
 
     display: flex;
@@ -1617,4 +1619,27 @@ img {
     .video-section { padding: 26px 14px 32px; }
     .video-section-inner { gap: 18px; }
     .video-card, .video-card-placeholder { min-height: 150px; }
+}
+
+
+/* =========================================================
+   SIXTH GALLERY MEMORY VIDEO
+   Keeps the existing gallery card dimensions and styling.
+========================================================= */
+
+.video-photo-container {
+    background: #160d12;
+}
+
+.gallery-memory-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #160d12;
+    border-radius: inherit;
+}
+
+.gallery-memory-video::-webkit-media-controls {
+    opacity: 1;
 }
