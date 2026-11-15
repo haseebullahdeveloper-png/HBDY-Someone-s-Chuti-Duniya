@@ -669,6 +669,7 @@ img {
 
 .photo-overlay {
     position: absolute;
+    pointer-events: none;
     inset: 0;
 
     display: flex;
@@ -723,6 +724,7 @@ img {
 ========================================================= */
 
 .like-btn {
+    pointer-events: auto;
     align-self: flex-end;
 
     display: flex;
