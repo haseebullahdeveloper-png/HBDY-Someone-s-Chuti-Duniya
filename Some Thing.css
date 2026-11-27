@@ -1643,3 +1643,13 @@ img {
 .gallery-memory-video::-webkit-media-controls {
     opacity: 1;
 }
+
+/* LAST 5% AUDIO RECORDINGS */
+.recordings-section { width:100%; padding:36px 20px 42px; background:#ff8ba5; box-sizing:border-box; }
+.recordings-inner { width:min(760px,100%); margin:0 auto; }
+.recordings-title { margin:0 0 22px; text-align:center; color:#fff; font-family:'Dancing Script',cursive; font-size:clamp(2rem,5vw,3rem); text-shadow:0 2px 8px rgba(90,20,40,.22); }
+.recordings-list { display:grid; gap:16px; }
+.recording-card { padding:18px 20px; border:1px solid rgba(255,255,255,.65); border-radius:18px; background:rgba(255,255,255,.82); box-shadow:0 8px 22px rgba(110,30,55,.12); }
+.recording-card h3 { margin:0 0 12px; color:#a52e50; font-family:'Poppins',sans-serif; font-size:1rem; font-weight:600; text-align:center; }
+.recording-card audio { display:block; width:100%; max-width:100%; }
+@media (max-width:600px) { .recordings-section { padding:28px 14px 34px; } .recording-card { padding:15px; } }
